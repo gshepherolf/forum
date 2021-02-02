@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/****************共通***************/
+
+html {
+    overflow: scroll;/*領域をスクロール表示*/
+}
+
+body {
+    letter-spacing: 1px;/*文字の間隔*/
+    font-size: 12px;/*文字の大きさ*/
+    color: #5a482b;/*文字の色*/
+}
+
+br {
+    letter-spacing: normal;
+}
+
+a {
+    color: #5a482b;/*文字の色*/
+    text-decoration: none;/*文字の装飾*/
+}
+
+a:hover {
+    color: #6289c6;/*文字の色*/
+}
+
+/**********ヘッダー**********/
+
+#header {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#pr {
+    position: relative;
+    width: 787px;
+    margin: 0 auto;
+}
+
+#header h1 {
+    margin: 0;
+    padding-top: 25px;
+}
+
+#contact {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/**********メニュー**********/
+
+#menu {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#menu ul {
+    padding: 0;
+    text-align: center;
+}
+
+#menu li {
+    float: left;
+    width: 150px;
+}
+
+/**********アイキャッチ**********/
+
+#icatch {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/**********コンテンツ***********/
+
+#contents {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#pageTop {
+    clear: both;
+    padding: 20px 0;
+    text-align: right;
+}
+
+/**********メイン(コンテンツ内)**********/
+
+#main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+img.small {
+    height: 100px;
+}
+/**********フッター**********/
+
+#footer {
+    padding: 5px 0;
+    text-align: center;
+}
+
+th.middle {
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+img.table {
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td{
+    text-align: center;
+    vertical-align: middle;
+}
