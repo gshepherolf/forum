@@ -15,7 +15,7 @@
 </style>
 
 <!-- google mapを表示する為に必要なjabascript  keyにはAPIキーを書き換えてjsファイルを読み込みます。 -->
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOD-r7zbA4Z-lDnDjYtLB2Uv-SBWFetXQ&callback=initMap" type="text/javascript"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=xxxx" type="text/javascript"></script>
 
 </head>
 <body>
@@ -31,7 +31,7 @@
 <!-- Google Map を表示するjavascript -->
 <script>
 function initMap() {
-	//現在位置を許可させ、位置を取得する javascript 参考URL：http://taitan916.info/blog/?p=2280
+	//現在位置を許可させ、位置を取得する
 	var ret = new Array();
 	if( navigator.geolocation ){
 		navigator.geolocation.getCurrentPosition(
@@ -39,7 +39,7 @@ function initMap() {
 			ret['long'] = pos.coords.longitude; //経度
 			ret['lat'] = pos.coords.latitude; //緯度
 			
-			//位置を指定して、Google mapに表示する javascript 参考URL：https://www.granfairs.com/blog/staff/google-maps-api-01
+			//位置を指定して、Google mapに表示する
 			var mapPosition = {}
 			mapPosition["lat"] = ret['lat'];
 			mapPosition["lng"] = ret['long'];
@@ -50,7 +50,7 @@ function initMap() {
 			};
 			var map = new google.maps.Map(mapArea, mapOptions);
 			
-			//現在地にマーカーを付けます。参考URL：https://developers.google.com/maps/documentation/javascript/markers?hl=ja
+			//現在地にマーカーを付けます。
 			var marker = new google.maps.Marker({
 			    position: mapPosition,
 			    title:"Your location"
